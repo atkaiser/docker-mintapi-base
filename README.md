@@ -6,4 +6,4 @@ It took me awhile to setup mintapi working inside of a docker container, so this
 
 And then inside the container you can run:
 
-`python /mintapi/mintapi/--headless you@example.com`
+`python /mintapi/mintapi/api.py --headless you@example.com`
