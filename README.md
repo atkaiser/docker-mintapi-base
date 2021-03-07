@@ -7,3 +7,13 @@ It took me awhile to setup mintapi working inside of a docker container, so this
 That runs the example script. Below is how I'm using it with my own script.
 
 `docker run -it --rm -v <local path to dev folder>:/tmp/mint alextkaiser/docker-mintapi-base python /tmp/mint/<script_name>`
+
+## Building the docker image
+
+Sometimes the image breaks when Chrome releases a new version, I don't fully understand why. In that case you would have to build the image manually by running:
+
+`docker build -t alextkaiser/docker-mintapi-base .`
+
+Then to upload it:
+
+`docker push alextkaiser/docker-mintapi-base`
